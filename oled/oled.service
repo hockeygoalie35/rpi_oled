@@ -1,0 +1,13 @@
+[Unit]
+Description=Status OLED SSD1306
+After=multi-user.target
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/home/pi/rpi_oled_stats/oled/oled_venv/bin/python /home/pi/rpi_oled_stats/oled_stats.py
+Restart=on-abort
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
