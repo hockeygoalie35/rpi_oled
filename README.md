@@ -7,5 +7,5 @@ To install:
 cd ~
 git clone https://github.com/hockeygoalie35/rpi_oled_stats
 cd ~/rpi_oled_stats/
-bash oled_install.sh
+bash install_oled.sh
 
