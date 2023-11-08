@@ -30,8 +30,8 @@ draw = ImageDraw.Draw(image)
 
 # Load default font.
 #font = ImageFont.load_default()
-header_font = ImageFont.truetype("/home/pi/rpi_oled_stats/CascadiaCode.ttf", size=16)
-info_font = ImageFont.truetype("/home/pi/rpi_oled_stats/CascadiaCode.ttf", size=11)
+header_font = ImageFont.truetype("/home/pi/rpi_oled_stats/oled/CascadiaCode.ttf", size=16)
+info_font = ImageFont.truetype("/home/pi/rpi_oled_stats/oled/CascadiaCode.ttf", size=11)
 padding = -2
 top = padding
 bottom = height-padding

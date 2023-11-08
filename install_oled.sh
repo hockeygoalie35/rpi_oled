@@ -16,8 +16,8 @@ python blinkatest.py
 sudo cp oled.service /lib/systemd/system/
 
 sudo chmod 644 /lib/systemd/system/oled.service
-sudo chmod +x $HOME/rpi_oled_stats/oled_stats.py
-sudo chmod +x $HOME/rpi_oled_stats/CascadiaCode.ttf
+sudo chmod +x $HOME/rpi_oled_stats/oled/oled_stats.py
+sudo chmod +x $HOME/rpi_oled_stats/oled/CascadiaCode.ttf
 sudo systemctl daemon-reload
 sudo systemctl enable oled.service
 sudo systemctl start oled.service
