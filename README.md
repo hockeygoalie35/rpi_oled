@@ -1,4 +1,4 @@
-# rpi_oled_stats
+# rpi_oled
 Service to show Raspberry-Pi stats on an SSD1306 on boot. (128x64px)
 
 To install:
