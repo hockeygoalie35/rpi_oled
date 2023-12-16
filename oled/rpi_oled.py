@@ -27,7 +27,6 @@ class ssd1306_display():
         self.oled = None
         self.font_path = font_path
         self.header_font = ImageFont.truetype(self.font_path, size=10)
-        #info_font = ImageFont.truetype("/home/pi/rpi_oled_stats/oled/CascadiaCode.ttf", size=11)
         self.init_screen()
 
 
@@ -94,7 +93,7 @@ class ssd1306_display():
 
 class pi_oled():
     def __init__(self):
-        self.oled_display = ssd1306_display(128,64,"/home/pi/rpi_oled_stats/oled/CascadiaCode.ttf")
+        self.oled_display = ssd1306_display(128,64,"/home/pi/rpi_oled/oled/CascadiaCode.ttf")
         #self.argument_parsing()
 
         self.init_stat_page()
