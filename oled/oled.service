@@ -5,7 +5,7 @@ After=multi-user.target
 [Service]
 Type=simple
 User=pi
-ExecStart=/home/pi/rpi_oled_stats/oled/oled_venv/bin/python /home/pi/rpi_oled_stats/oled/oled_stats.py
+ExecStart=/home/pi/rpi_oled/oled/oled_venv/bin/python /home/pi/rpi_oled/oled/rpi_oled.py
 Restart=on-abort
 KillSignal=SIGINT
 
