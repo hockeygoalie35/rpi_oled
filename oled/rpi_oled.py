@@ -110,16 +110,20 @@ class pi_oled():
             return hostname
 
         def get_IP():
-            hostname = socket.gethostname()
-            ip_address = socket.gethostbyname(hostname)
-            return ip_address
+            host_name = socket.gethostname()
+            if os.name != 'nt':
+                host_name = host_name + ".local"
+            host_addr = socket.gethostbyname(host_name)
+
+
+            return host_addr
 
         def get_cpu():
             if os.name == 'nt':
                 load1, load5, load15 = psutil.getloadavg()
             else:
                 load1, load5, load15 = os.getloadavg()
-            cpu_usage = round((load1 / os.cpu_count()) * 100, 3)
+            cpu_usage = round((load1 / os.cpu_count()) * 100, 1)
             return cpu_usage
 
         def get_ram():
