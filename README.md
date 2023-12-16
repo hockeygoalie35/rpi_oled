@@ -5,7 +5,7 @@ To install:
 
 ```bash
 cd ~
-git clone https://github.com/hockeygoalie35/rpi_oled_stats
-cd ~/rpi_oled_stats/
+git clone https://github.com/hockeygoalie35/rpi_oled
+cd ~/rpi_oled/
 bash install_oled.sh
 
