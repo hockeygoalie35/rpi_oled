@@ -7,6 +7,7 @@ cd blinka
 pip3 install --upgrade adafruit-python-shell
 pip3 install --upgrade adafruit-circuitpython-ssd1306
 pip install --upgrade pillow
+pip install --upgrade psutil
 sudo wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/raspi-blinka.py
 yes N | sudo -E env PATH=$PATH python3 raspi-blinka.py
 cd ..
